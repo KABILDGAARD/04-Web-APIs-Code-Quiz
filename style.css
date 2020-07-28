@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    overflow: hidden;
+}
+
+.c {
+    z-index: 1;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    background: none;
+    z-index: 12;
+    position: absolute;
+    width: 100%;
+  }
+
+
+.grid {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 1%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 50px 50px 50px;
+    border: .1px solid #f4427d;
+    border-radius: 25px;
+    max-width: 100%;  
+    z-index: 12;
+    align-items: center;
+}
+ 
+.grid h1 {
+    font-family: "sans-serif";
+    background-color: #f4427d;
+    border-radius: 15px;
+    margin: 15px 40px 15px 15px;
+    padding: 10px 10px;
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    margin: 0 auto;
+}
+ 
+#score {
+    color: #f4427d;
+    text-align: center;
+    font-size: 30px;
+}
+ 
+.grid #question {
+    font-family: "monospace";
+    font-size: 30px;
+    text-align: center;
+    color: #f4427d;
+}
+ 
+.buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+ 
+#btn0, #btn1, #btn2, #btn3 {
+    background-color: #f4427d;
+    width: 250px;
+    font-size: 20px;
+    color: black;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 3%;
+}
+ 
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+ 
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+ 
+#progress {
+    color: #f4427d;
+    font-size: 18px;
+}
+
+#time {
+    font-family: "monster";
+    background-color: #f4427d;
+    border-radius: 15px;
+    margin: 15px 40px 15px 15px;
+    padding: 10px 10px;
+    font-size: 30px;
+    color: black;
+}
+
+
+.card-footer {
+    text-align: center;
+    z-index: 6;
+  }
+  
+.card-footer::before {
+    content: " ";
+    display: block;
+    width: 100%;
+    background: #e7e9eb;
+    height: 2px;
+  }
+  
+.card-footer::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  
