@@ -1,5 +1,5 @@
 
-// Timer
+// Timer...Fail alert + Restart once 5 Minutes is up
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
@@ -11,12 +11,15 @@ function startTimer(duration, display) {
 
         display.textContent = minutes + ":" + seconds;
 
+
+
         if (--timer < 0) {
             timer = duration;
-            alert("Sorry, your failed.")
+            alert("Sorry, you failed.")
             if(alert('Try Again!')){}
             else window.location.reload(); 
         }
+
 
     }, 1000);
 }
@@ -65,6 +68,7 @@ Question.prototype.isCorrectAnswer = function(choice) {
 function populate() {
     if(quiz.isEnded()) {
         showScores();
+        
     }
     else {
         // show question
@@ -82,6 +86,8 @@ function populate() {
         showProgress();
     }
 };
+
+
  
 function guess(id, guess) {
     var button = document.getElementById(id);
@@ -100,20 +106,26 @@ function showProgress() {
  
 function showScores() {
     var gameOverHTML = "<h1>Result</h1>";
-    gameOverHTML += "<h2 id='score'> Your scores: " + quiz.score + "</h2>";
+    gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
 };
+
+
  
 // create questions here
 var questions = [
-    new Question("Hyper Text Markup Language Stand For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML"),
+    new Question("Hyper Text Markup Language Stands For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML"),
     new Question("Which language is used for styling web pages?", ["HTML", "JQuery", "CSS", "XML"], "CSS"),
     new Question("Which is not a JavaScript Framework?", ["Python Script", "JQuery","Django", "NodeJS"], "Django"),
     new Question("Which is used for Connect To Database?", ["PHP", "HTML", "JS", "All"], "PHP"),
-    new Question("Webdevtrick.com is about..", ["Web Design", "Graphic Design", "SEO & Development", "All"], "All")
+    new Question("Which of the following is used to represent unvisited hyperlink?", [":fresh", ":unvisited", ":nonvisited", ":link"], ":link")
 ];
  
+
+
+
+
 // create quiz
 var quiz = new Quiz(questions);
  
