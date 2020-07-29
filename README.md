@@ -61,7 +61,7 @@ Contributing:
 
 Authors and acknowledgment:
 
-    N/A
+    Matrix canvas by Boujjou Achraf
 
 License:
 
