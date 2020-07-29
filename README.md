@@ -30,10 +30,9 @@ Badges:
 
 Visuals:
 
-    ![Alt text](Assets/start screen.png?raw=true "Start Screen")
+    ![alt text](Assets/start screen.png "Start Screen")
 
-    ![Alt text](Assets/result screen.png?raw=true "Result Screen")
-
+    ![alt text](Assets/result screen.png "Result Screen")
 
 Installation:
 
