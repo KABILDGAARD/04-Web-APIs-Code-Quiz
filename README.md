@@ -30,6 +30,9 @@ Badges:
 
 Visuals:
 
+    ![Alt text](Assets/start screen.png?raw=true "Start Screen")
+
+    ![Alt text](Assets/result screen.png?raw=true "Result Screen")
 
 
 Installation:
@@ -50,6 +53,8 @@ Support:
 Roadmap:
 
     Expand on program to have a header featuring 5 minute quizes for other subjects within coding as well as downloadable notecards for each topic.
+
+    Expand further on Local Storage.
 
 Contributing:
 
