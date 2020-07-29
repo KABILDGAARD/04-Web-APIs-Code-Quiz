@@ -44,6 +44,7 @@ body {
     font-family: "sans-serif";
     background-color: #f4427d;
     border-radius: 15px;
+    border: 1px solid white;
     margin: 15px 40px 15px 15px;
     padding: 10px 10px;
     font-size: 60px;
@@ -83,7 +84,7 @@ body {
     margin-top: 3%;
 }
  
-#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover  {
     cursor: pointer;
     background: black;
     color: white;
@@ -102,6 +103,7 @@ body {
     font-family: "monster";
     background-color: #f4427d;
     border-radius: 15px;
+    border: 1px solid white;
     margin: 15px 40px 15px 15px;
     padding: 10px 10px;
     font-size: 30px;
