@@ -71,11 +71,10 @@ function populate() {
         
     }
     else {
-        // show question
+
         var element = document.getElementById("question");
         element.innerHTML = quiz.getQuestionIndex().text;
  
-        // show options
         var choices = quiz.getQuestionIndex().choices;
         for(var i = 0; i < choices.length; i++) {
             var element = document.getElementById("choice" + i);
@@ -109,27 +108,21 @@ function showScores() {
     gameOverHTML += "<h2 id='score'> Your score: " + quiz.score + "</h2>";
     var element = document.getElementById("quiz");
     element.innerHTML = gameOverHTML;
+    
 };
 
-
  
-// create questions here
 var questions = [
-    new Question("Hyper Text Markup Language Stands For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML"),
+    new Question("How many types of heading does an HTML contain?", ["1", "20","5", "6"], "6"),
     new Question("Which language is used for styling web pages?", ["HTML", "JQuery", "CSS", "XML"], "CSS"),
     new Question("Which is not a JavaScript Framework?", ["Python Script", "JQuery","Django", "NodeJS"], "Django"),
-    new Question("Which is used for Connect To Database?", ["PHP", "HTML", "JS", "All"], "PHP"),
+    new Question("If you want to define a style for a unique element, then which css selector will you use?", ["Id", "Text", "Class", "Name"], "Id"),
     new Question("Which of the following is used to represent unvisited hyperlink?", [":fresh", ":unvisited", ":nonvisited", ":link"], ":link")
 ];
  
 
-
-
-
-// create quiz
 var quiz = new Quiz(questions);
  
-// display quiz
 populate();
 
 
